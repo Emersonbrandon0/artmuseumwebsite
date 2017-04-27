@@ -1,0 +1,141 @@
+<html>
+<head>
+	<title>Wilson Reginald Museum of Art</title>
+
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+      if (sr.isSupported()) {
+        document.documentElement.classList.add('sr');
+      }
+
+    </script>
+    <style>
+      .sr .fooReveal { visibility: hidden; }
+    </style>
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheet.css"/> 
+	<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+	<div class="content">
+		<div id="menu">
+			<header>
+				<ul>
+					<li>
+						<a href="#">SHOWCASE</a>
+					</li>
+					<li>
+						<a href="#">EXHIBITIONS</a>
+					</li>
+					<li>
+						<a href="#">TICKETS</a>
+					</li>
+					<li>
+						<a href="#">GET INVOLVED</a>
+					</li>
+				</ul>
+			</header>
+		</div>
+		<div class="container">
+			<div class="row">
+				<h2 class="bar">Come see the new pieces added to the Wilson Reginald Museum of Art, the premier art museum of Portland</h2>
+				<div class="col s12 m12 center-align">
+					<a class="waves-effect waves-light longButton btn-large #e53935 red darken-1 leftSlide z-depth-5">Schedule a visit</a>
+				</div>
+				<div class="col s12 m12 foo">
+					<h2 class="italic bolder right-align quote">"The purpose of art is washing the dust of daily life off our souls." -Pablo Picasso</h1>
+				</div>
+			</div>
+			<div class="row">
+			        <div class="col s12 m4">
+			        	<div class="card z-depth-5">
+			            	<div class="card-image z-depth-3">
+			              		<img src="img/image2.jpg">
+			              		<span class="card-title">Card Title</span>
+			            	</div>
+				            <div class="card-content differentColor">
+				              	<p>I am a very simple card. I am good at containing small bits of information.
+				            	I am convenient because I require little markup to use effectively.</p>
+				            </div>
+				            <div class="card-action z-depth-4">
+				              	<a href="#">This is a link</a>
+				            </div>
+				        </div>
+			        </div>
+			        <div class="col s12 m4">
+			        	<div class="card z-depth-5">
+			            	<div class="card-image z-depth-3">
+			              		<img src="img/image6.jpg">
+			              		<span class="card-title">Card Title</span>
+			            	</div>
+				            <div class="card-content differentColor">
+				              	<p>I am a very simple card. I am good at containing small bits of information.
+				            	I am convenient because I require little markup to use effectively.</p>
+				            </div>
+				            <div class="card-action z-depth-4">
+				              	<a href="#">This is a link</a>
+				            </div>
+				        </div>
+			        </div>
+			        <div class="col s12 m4">
+			        	<div class="card z-depth-5">
+			            	<div class="card-image z-depth-3">
+			              		<img src="img/image4.jpg">
+			              		<span class="card-title">Card Title</span>
+			            	</div>
+				            <div class="card-content differentColor">
+				              	<p>I am a very simple card. I am good at containing small bits of information.
+				            	I am convenient because I require little markup to use effectively.</p>
+				            </div>
+				            <div class="card-action z-depth-4">
+				              	<a href="#">This is a link</a>
+				            </div>
+				        </div>
+			        </div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<h3>Lightweight</h3>
+					<p>Materialize.css is very lightweight and great for small projects that want to incorporate material design principles</p>   
+				</div>
+		        <div class="col s6">
+		        	<div class="card bottomCard">
+		            	<div class="card-image z-depth-5">
+		              		<img src="img/image5.jpg">
+		              		<span class="card-title">Card Title</span>
+		            	</div>
+			        </div>
+		        </div>
+			</div>			      
+		</div>
+	</div>
+
+	<div class="secondaryContent z-depth-5">		
+	</div>
+	
+	<script
+		src="http://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script>
+		$('document').ready(function(){
+			$('p, card-content, card-title').addClass('flow-text');
+
+			window.sr=ScrollReveal();
+			sr.reveal('.foo',{origin:'right',distance:'150px',duration:2000});
+			sr.reveal('.bar',{origin:'top',distance:'200px',duration:1500});	
+			sr.reveal('li', { duration: 1500}, 150);
+			sr.reveal('.card-content',{origin:'right',distance:'150px',duration:1500, viewFactor: 0.05},150);
+			sr.reveal('.bottomCard',{origin:'top',distance:'50px',duration:1500});
+			sr.reveal('.secondaryContent',{origin:'left',distance:'200px',duration:1000,viewFactor:0.15});
+
+		});
+	</script>
+</body>
+
+</html>
